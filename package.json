@@ -1,0 +1,22 @@
+{
+  "name": "dom_bom_api",
+  "version": "1.0.0",
+  "description": "Blog functionality with VanillaJS",
+  "main": "gulpfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/paultit/dom_bom_api.git"
+  },
+  "author": "Pavlo Titarenko",
+  "license": "ISC",
+  "homepage": "https://github.com/paultit/dom_bom_api#readme",
+  "devDependencies": {
+    "browser-sync": "^2.24.6",
+    "del": "^3.0.0",
+    "gulp": "^3.9.1",
+    "gulp-sass": "^4.0.1"
+  }
+}

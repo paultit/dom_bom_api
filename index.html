@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- META -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/fonts.css">
+    <link rel="stylesheet" href="css/icons.css">
+    <link rel="stylesheet" href="css/main.css">
+    <title>Blog</title>
+</head>
+<body>
+<!-- Application -->
+<div class="app">
+
+    <!-- header -->
+    <header>
+        <div class="container">
+            <div class="row">
+                <nav class="col-12 d-flex flex-wrap navbar navbar-expand-lg">
+                    <div class="col-lg-2 col-sm-10 col-9">
+                        <a class="navbar-brand" href="#"><img src="img/logo.jpg" alt="logo"/></a>
+                    </div>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+
+                    <div class="col-md-10 collapse navbar-collapse " id="navbarSupportedContent">
+                        <ul class="navbar-nav d-flex mr-auto">
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">About</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Info</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Contacts</a>                                                        </li>
+                        </ul>
+                        <!--icons-->
+                        <div class="social-icons d-flex align-items-center">
+                            <ul class="d-flex">
+                                <li class="envelop"><a href="mailto:titarenko.pavel@gmail.com" target="_blank"><i class="icon-envelop"></i></a></li>
+                                <li class="facebook"><a href="https://www.facebook.com/profile.php?id=100014949610280" target="_blank"><i class="icon-facebook"></i></a></li>
+                                <li class="linkedin"><a href="https://www.linkedin.com/in/pavel-titarenko/" target="_blank"><i class="icon-linkedin"></i></a></li>
+                                <li class="gitHub"><a href="https://github.com/paultit" target="_blank"><i class="icon-github"></i></a></li>
+                                <li><a href="#"><i class="icon-search"></i></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+        </div>
+
+    </header>
+
+    <section class="content">
+        <div class="container">
+            <div class="row">
+                <aside class="col-12 col-md-4 col-lg-3">
+                    <div class="sort-by d-flex flex-column">
+                        <h4>Sort by date:</h4>
+                        <div class="aside-search d-flex" id="sort_by_date">
+                            <select data-sort="date">
+                                <option value="true">Newest first</option>
+
+                                <option value="false">Oldest first</option>
+                            </select>
+
+                            <button class="btn" type="button">
+                                <i class="icon-search"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="sort-by d-flex flex-column">
+                        <h4>Sort by tags:</h4>
+                        <div class="aside-search d-flex" id="sort_by_tags">
+                            <select data-sort="tags" multiple size="4"></select>
+                            <button class="btn" type="button">
+                                <i class="icon-search"></i>
+                            </button>
+                        </div>
+                        <p>Hold down the Ctrl (windows) / Command (Mac) button to select multiple options.</p>
+                    </div>
+                    <div class="instant-search d-flex flex-column">
+                        <h4>Instant search:</h4>
+                        <div class="aside-search">
+                            <input type="text" id="instant-search" />
+                        </div>
+                    </div>
+                </aside>
+                <main class="col-12 col-md-8 col-lg-9">
+                    <div class="right-half-row posts"></div>
+                </main>
+            </div>
+        </div>
+
+    </section>
+
+    <footer>
+        <div class="footer-top">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 d-flex justify-content-center align-items-center">
+                        <div class="col-md-3 col-lg-2">
+                            <a class="logo" href="#"><img src="img/logo.jpg" alt="logo"/></a>
+                        </div>
+
+                        <div class="d-flex col-md-5 col-lg-4 ">
+                            <ul class="social-icons d-flex flex-column">
+                                <li><a href="mailto: tittarenko.pavel@gmail.com" target="_blank" class="d-flex email"><i class="icon-envelop"></i>tittarenko.pavel@gmail.com</a></li>
+                                <li><a href="https://www.facebook.com/profile.php?id=100014949610280" target="_blank"><i class="icon-facebook"></i>Facebook</a></li>
+                                <li><a href="https://www.linkedin.com/in/pavel-titarenko/" target="_blank"><i class="icon-linkedin"></i>Linkedin</a></li>
+                                <li><a href="https://github.com/paultit" target="_blank"><i class="icon-github"></i>GitHub</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 d-flex justify-content-center">
+                        created by
+                        <a href="#">Pavlo Titarenko</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+</div>
+<button class="btn only-ten-posts-btn" id="only-ten">Only 10 Posts</button>
+<!-- Plugins -->
+<script src="https://code.jquery.com/jquery-3.3.1.min.js"
+        integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+        crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script type="text/javascript" src="js/libs/bootstrap.min.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>
+

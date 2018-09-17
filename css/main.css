@@ -1,0 +1,328 @@
+.app header {
+  background-color: #008B8B; }
+  .app header .navbar-brand {
+    width: 100%;
+    background-size: cover; }
+    @media (max-width: 991px) {
+      .app header .navbar-brand img {
+        margin-left: 250px; } }
+    @media (max-width: 767px) {
+      .app header .navbar-brand img {
+        margin-left: 150px; } }
+    @media (max-width: 500px) {
+      .app header .navbar-brand img {
+        margin-left: 120px; } }
+    @media (max-width: 450px) {
+      .app header .navbar-brand img {
+        margin-left: 100px; } }
+    @media (max-width: 400px) {
+      .app header .navbar-brand img {
+        margin-left: 75px; } }
+    @media (max-width: 360px) {
+      .app header .navbar-brand img {
+        margin-left: 45px; } }
+    @media (max-width: 330px) {
+      .app header .navbar-brand img {
+        margin-left: 25px; } }
+  @media (max-width: 991px) {
+    .app header .navbar-toggler {
+      display: block;
+      position: relative;
+      overflow: hidden;
+      margin: 0;
+      padding: 0;
+      width: 68px;
+      height: 60px;
+      margin-left: auto;
+      font-size: 25px;
+      text-indent: -9999px;
+      -webkit-appearance: none;
+      -moz-appearance: none;
+      appearance: none;
+      box-shadow: none;
+      border-radius: none;
+      border: none;
+      cursor: pointer;
+      -webkit-transition: background 0.3s;
+      transition: background 0.3s;
+      background: #808080; }
+      .app header .navbar-toggler:focus {
+        outline: none; }
+      .app header .navbar-toggler span {
+        display: block;
+        position: absolute;
+        top: 28px;
+        left: 15px;
+        right: 15px;
+        height: 6px;
+        background: white; }
+        .app header .navbar-toggler span:before, .app header .navbar-toggler span:after {
+          position: absolute;
+          display: block;
+          left: 0;
+          width: 100%;
+          height: 6px;
+          background-color: #fff;
+          content: ""; }
+        .app header .navbar-toggler span:before {
+          top: -18px; }
+        .app header .navbar-toggler span:after {
+          bottom: -18px; } }
+  .app header .navbar-nav li {
+    margin-right: 25px; }
+    .app header .navbar-nav li a {
+      font-family: "AvenirNextCyr", sans-serif;
+      font-size: 24px;
+      color: #2F4F4F; }
+  .app header .navbar-nav li:last-child {
+    margin-right: 0; }
+  .app header .social-icons {
+    padding-top: 20px; }
+    @media (max-width: 991px) {
+      .app header .social-icons {
+        display: none !important; } }
+    .app header .social-icons li {
+      margin-right: 20px;
+      list-style: none; }
+      .app header .social-icons li a i {
+        font-size: 35px;
+        color: #2F4F4F; }
+    .app header .social-icons li:hover a {
+      text-decoration: none; }
+    .app header .social-icons li.gitHub {
+      margin-right: 40px; }
+
+.app section.content {
+  padding: 20px 0; }
+  .app section.content aside .sort-by,
+  .app section.content aside .instant-search {
+    font-size: 1.2rem;
+    margin-top: 40px; }
+    .app section.content aside .sort-by p,
+    .app section.content aside .instant-search p {
+      margin-top: 5px;
+      font-size: 0.8em; }
+  .app section.content aside .instant-search .aside-search {
+    position: relative; }
+    .app section.content aside .instant-search .aside-search::after {
+      font-family: 'icomoon';
+      font-weight: 900;
+      content: '\e986';
+      position: absolute;
+      right: 5px;
+      top: 50%;
+      transform: translateY(-50%);
+      color: #444;
+      font-size: 30px; }
+  .app section.content aside .aside-search {
+    display: flex;
+    margin-top: 5px; }
+    .app section.content aside .aside-search select,
+    .app section.content aside .aside-search input,
+    .app section.content aside .aside-search button {
+      font-size: 1.2rem;
+      border-radius: 0 5px 5px 0;
+      padding: 10px 15px; }
+    .app section.content aside .aside-search select,
+    .app section.content aside .aside-search input {
+      flex: 1 0 auto;
+      color: #444;
+      width: calc(100% - 60px);
+      border-radius: 5px 0 0 5px;
+      border: 1px solid darkgray; }
+      .app section.content aside .aside-search select:focus,
+      .app section.content aside .aside-search input:focus {
+        outline: 0; }
+    .app section.content aside .aside-search select {
+      background: none; }
+    .app section.content aside .aside-search input {
+      border-radius: 5px;
+      padding-right: 45px; }
+  .app section.content main .right-half-row.posts .post {
+    box-shadow: 0 1px 8px 1px rgba(0, 0, 0, 0.2);
+    margin: 40px 0; }
+    @media (max-width: 991px) {
+      .app section.content main .right-half-row.posts .post {
+        flex-direction: column; } }
+    .app section.content main .right-half-row.posts .post:hover .post-img img {
+      transform: scale(1.1); }
+    .app section.content main .right-half-row.posts .post .post-img {
+      flex: 0 0 35%;
+      height: auto;
+      overflow: hidden; }
+      @media (max-width: 1199px) {
+        .app section.content main .right-half-row.posts .post .post-img {
+          height: auto; } }
+      @media (max-width: 991px) {
+        .app section.content main .right-half-row.posts .post .post-img {
+          width: 100%; } }
+      .app section.content main .right-half-row.posts .post .post-img img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        transition: .3s ease; }
+    .app section.content main .right-half-row.posts .post .post-body {
+      padding: 15px;
+      flex: 1 1 auto; }
+      @media (max-width: 991px) {
+        .app section.content main .right-half-row.posts .post .post-body {
+          width: 100%; } }
+      .app section.content main .right-half-row.posts .post .post-body h3.post-title {
+        margin-top: 10px;
+        margin-bottom: 15px;
+        font-family: "AvenirNextCyr", sans-serif;
+        font-size: 32px;
+        font-weight: 700; }
+      .app section.content main .right-half-row.posts .post .post-body span.post-date {
+        margin-bottom: 10px;
+        font-family: "AvenirNextCyr", sans-serif;
+        font-weight: 300;
+        font-size: 22px;
+        font-style: italic; }
+      .app section.content main .right-half-row.posts .post .post-body p.post-description {
+        margin-bottom: 15px;
+        font-family: "AvenirNextCyr", sans-serif;
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 34px; }
+      .app section.content main .right-half-row.posts .post .post-body .post-tags span {
+        font-family: "AvenirNextCyr", sans-serif;
+        font-weight: 300;
+        font-size: 22px;
+        font-style: italic; }
+      .app section.content main .right-half-row.posts .post .post-body .post-tags ul {
+        padding-left: 10px;
+        flex-wrap: wrap; }
+        .app section.content main .right-half-row.posts .post .post-body .post-tags ul li {
+          margin-bottom: 10px;
+          padding-left: 5px;
+          list-style: none; }
+          .app section.content main .right-half-row.posts .post .post-body .post-tags ul li::after {
+            content: ",";
+            color: #008B8B; }
+          .app section.content main .right-half-row.posts .post .post-body .post-tags ul li:last-child::after {
+            content: ""; }
+          .app section.content main .right-half-row.posts .post .post-body .post-tags ul li:hover a {
+            text-decoration: none; }
+          .app section.content main .right-half-row.posts .post .post-body .post-tags ul li a {
+            font-family: "AvenirNextCyr", sans-serif;
+            font-weight: 700;
+            font-size: 22px;
+            font-style: italic;
+            color: #008B8B; }
+      .app section.content main .right-half-row.posts .post .post-body .post-btns {
+        margin-top: 10px; }
+        .app section.content main .right-half-row.posts .post .post-body .post-btns button.del-btn:hover {
+          background-color: #dc3545; }
+
+.app footer {
+  background-color: #008B8B; }
+  .app footer .footer-top {
+    padding: 20px 0; }
+    .app footer .footer-top .container {
+      position: relative; }
+      @media (max-width: 400px) {
+        .app footer .footer-top .container .col-12 .social-icons {
+          padding-left: 0; } }
+      .app footer .footer-top .container .col-12 .social-icons li {
+        margin-bottom: 20px;
+        list-style: none; }
+        .app footer .footer-top .container .col-12 .social-icons li a {
+          font-family: "AvenirNextCyr", sans-serif;
+          font-size: 16px;
+          color: #2F4F4F; }
+          .app footer .footer-top .container .col-12 .social-icons li a i {
+            margin-right: 25px;
+            font-size: 24px;
+            color: #2F4F4F; }
+          .app footer .footer-top .container .col-12 .social-icons li a:hover {
+            text-decoration: none; }
+      .app footer .footer-top .container .col-12 .social-icons li:last-child {
+        margin-bottom: 0; }
+      @media (max-width: 575px) {
+        .app footer .footer-top .container .col-12 {
+          flex-direction: column; } }
+  @media (max-width: 575px) and (max-width: 575px) {
+    .app footer .footer-top .container .col-12 .col-md-3 {
+      margin: 0 auto 25px;
+      width: 180px; } }
+  @media (max-width: 575px) and (max-width: 575px) {
+    .app footer .footer-top .container .col-12 .col-md-5 {
+      margin: 0 auto;
+      padding-left: 0;
+      padding-right: 10px;
+      width: 250px; } }
+      .app footer .footer-top .container a {
+        font-family: "AvenirNextCyr", sans-serif;
+        font-size: 24px;
+        color: #2F4F4F; }
+      .app footer .footer-top .container:after {
+        position: absolute;
+        content: "";
+        bottom: 0;
+        left: 15%;
+        width: 70%;
+        border-bottom: 2px solid #000000; }
+        @media (max-width: 767px) {
+          .app footer .footer-top .container:after {
+            left: 5%;
+            width: 90%; } }
+  .app footer .footer-bottom {
+    padding: 20px 0; }
+    .app footer .footer-bottom .d-flex {
+      font-family: "AvenirNextCyr", sans-serif;
+      font-size: 20px;
+      color: #2F4F4F; }
+      .app footer .footer-bottom .d-flex:hover a {
+        text-decoration: none; }
+      .app footer .footer-bottom .d-flex a {
+        padding-left: 7px;
+        font-style: italic;
+        color: #C0C0C0; }
+
+.btn {
+  position: relative;
+  font-size: 1.2rem;
+  border-radius: 5px;
+  border: 0;
+  outline: 0;
+  padding: 10px 15px;
+  color: #fff;
+  background-color: #008B8B;
+  -webkit-transition-duration: 0.4s;
+  /* Safari */
+  transition-duration: 0.4s;
+  text-decoration: none;
+  overflow: hidden; }
+  .btn:hover {
+    box-shadow: 0 1px 8px rgba(0, 0, 0, 0.5); }
+  .btn::after {
+    content: "";
+    background: rgba(255, 255, 255, 0.5);
+    display: block;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    padding-top: 400%;
+    padding-left: 350%;
+    margin-left: -20px !important;
+    margin-top: -120%;
+    opacity: 0;
+    transition: all 0.4s; }
+  .btn:active:after {
+    padding: 0;
+    margin: 0;
+    opacity: 1;
+    transition: 0s; }
+
+.only-ten-posts-btn {
+  display: none;
+  position: fixed;
+  bottom: 10%;
+  left: 15px;
+  width: 105px;
+  height: 105px;
+  border-radius: 50%;
+  white-space: normal; }
+  .only-ten-posts-btn.active {
+    display: block; }
