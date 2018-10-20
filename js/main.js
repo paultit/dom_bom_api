@@ -31,11 +31,9 @@ function fillTagsSelect() {
     });
 
     [...tags].sort().map(tag => {
-        console.log(tags);
         const option = document.createElement("option");
         option.innerHTML = option.value = tag;
         sortByTagsSelect.appendChild(option);
-        console.log(sortByTagsSelect);
     });
 }
 

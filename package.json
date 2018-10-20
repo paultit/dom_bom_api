@@ -14,9 +14,9 @@
   "license": "ISC",
   "homepage": "https://github.com/paultit/dom_bom_api#readme",
   "devDependencies": {
-    "browser-sync": "^2.24.6",
+    "browser-sync": "^2.26.3",
     "del": "^3.0.0",
-    "gulp": "^3.9.1",
-    "gulp-sass": "^4.0.1"
+    "gulp": "^4.0.0",
+    "gulp-sass": "^4.0.2"
   }
 }
